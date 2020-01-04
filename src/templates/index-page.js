@@ -1,10 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-
 import Layout from '../components/Layout'
-import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import FeaturedBlogRoll from '../components/FeaturedBlogRoll'
 
 export const IndexPageTemplate = ({
   image,
@@ -20,18 +19,19 @@ export const IndexPageTemplate = ({
       <div className="container">
         <div className="section">
           <div className="columns">
-            <div className="column is-10 is-offset-1">
+            <div>
               <div className="content">          
                 <div className="column is-12">
+                  <h3 className="has-text-weight-semibold is-size-2">
+                    Featured Conveyancing News
+                  </h3>
+                  <FeaturedBlogRoll />
+                  
                   <h3 className="has-text-weight-semibold is-size-2">
                     Latest Conveyancing News
                   </h3>
                   <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
-                  </div>
+
                 </div>
               </div>
             </div>
