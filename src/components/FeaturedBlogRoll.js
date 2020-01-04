@@ -12,7 +12,7 @@ class BlogRoll extends React.Component {
       <div className="columns is-multiline">
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="is-parent column is-3" key={post.id}>
+            <div className="is-parent column is-4" key={post.id}>
               <article
                 className={`blog-list-item tile is-child box ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
@@ -37,7 +37,7 @@ class BlogRoll extends React.Component {
                       {post.frontmatter.date}
                     </span>
                     <Link
-                      className="title has-text-primary is-size-3"
+                      className="title has-text-primary is-size-4"
                       to={post.fields.slug}
                     >
                       {post.frontmatter.title}
@@ -72,11 +72,11 @@ BlogRoll.propTypes = {
 export default () => (
   <StaticQuery
     query={graphql`
-      query BlogRollQuery {
+      query FeaturedBlogRollQuery{
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
-          limit: 8
+          filter: { frontmatter: { templateKey: { eq: "blog-post" }, featuredpost: { eq: true} } }
+          limit: 3
         ) {
           edges {
             node {
