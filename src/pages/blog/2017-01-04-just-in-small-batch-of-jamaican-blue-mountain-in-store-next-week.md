@@ -11,24 +11,39 @@ snippet: >-
 featuredpost: true
 featuredimage: /img/example-post.jpg
 type: events
+tags:
+  - event
 ---
+<!--StartFragment-->
 
-We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
+# WHAT’S AHEAD IN THE BRITISH PROPERTY MARKET IN 2020?
 
-Blue Mountain Peak is the highest mountain in Jamaica and one of the highest peaks in the Caribbean at 7,402 ft. It is the home of Blue Mountain coffee and their famous tours. It is located on the border of the Portland and Saint Thomas parishes of Jamaica.
+2020 IS LOOMING, AND THE BRITISH PROPERTY MARKET EXPERTS ARE MAKING THEIR FORECASTS FOR THE YEAR AHEAD, INCLUDING PRICES AND OTHER CONSIDERATIONS.
 
-## A little history
+Much of the focus is on how much house prices might rise by. But other factors will help shape decisions on whether to buy or sell a home in the next 12 months.
 
-The Blue Mountains are considered by many to be a hiker's and camper's paradise. The traditional Blue Mountain trek is a 7-mile hike to the peak and consists of a 3,000-foot increase in elevation. Jamaicans prefer to reach the peak at sunrise, thus the 3–4 hour hike is usually undertaken in darkness. Since the sky is usually very clear in the mornings, Cuba can be seen in the distance.
+We take a look at what might lie ahead in the property market.
 
->Some of the plants found on the Blue Mountain cannot be found anywhere else in the world and they are often of a dwarfed sort.
+### Brexit’s Will-We-Won’t-We Question Settled
 
-This is mainly due to the cold climate which inhibits growth. The small coffee farming communities of Claverty Cottage and Hagley Gap are located near the peak.
+The uncertainty in UK politics has been removed with the Conservatives’ thumping general election victory.
 
-## What you need to know before trying
+But the spectre of Brexit – the UK’s departure from the European Union – has had the greatest effect on the property market.
 
-Jamaican Blue Mountain Coffee or Jamaica Blue Mountain Coffee is a classification of coffee grown in the Blue Mountains of Jamaica. The best lots of Blue Mountain coffee are noted for their mild flavor and lack of bitterness. Over the past few decades, this coffee has developed a reputation that has made it one of the most expensive and sought-after coffees in the world. Over 80% of all Jamaican Blue Mountain Coffee is exported to Japan. In addition to its use for brewed coffee, the beans are the flavor base of Tia Maria coffee liqueur.
+Before the EU referendum in June 2016, house prices[rose on average](https://www.thisismoney.co.uk/money/mortgageshome/article-7802771/Will-Boris-Bounce-spark-house-price-fireworks.html)by 8 percent every year. By September 2019, however, the rate had dropped to 1.3 percent.
 
-Jamaican Blue Mountain Coffee is a globally protected certification mark, meaning only coffee certified by the Coffee Industry Board of Jamaica can be labeled as such. It comes from a recognized growing region in the Blue Mountain region of Jamaica, and its cultivation is monitored by the Coffee Industry Board of Jamaica.
+With a new government in place with a strong majority, the will-we-won’t-we nature of Brexit is over. The UK is likely to depart the EU on January 31.
 
-The Blue Mountains are generally located between Kingston to the south and Port Antonio to the north. Rising 7,402 ft, they are some of the highest mountains in the Caribbean. The climate of the region is cool and misty with high rainfall. The soil is rich, with excellent drainage. This combination of climate and soil is considered ideal for coffee.
+Therefore, the certainty of our departure should give homeowners and home buyers more confidence in planning a move.
+
+### House Price Bounce?
+
+Rightmove is among the estate agents predicting bigger house price gains in the property market in 2020.
+
+The online property portal is[forecasting a 2 percent rise in prices](https://www.rightmove.co.uk/news/articles/property-news/house-price-index-2020-forecast-price-rise-increase). It’s also forecasting more properties coming on to the market. One side effect of the Brexit uncertainty was a drop in supply as homeowners decided to sit tight.
+
+That could all change in the coming weeks and months, making spring in particular a boom time for buyers and sellers.
+
+##### MILES SHIPSIDE, RIGHTMOVE DIRECTOR, SAID:
+
+<!--EndFragment-->
