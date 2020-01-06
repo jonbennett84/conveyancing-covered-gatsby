@@ -8,7 +8,7 @@ description: >-
 snippet: >-
   Conveyancing Covered will be bringing you the latest news, events, interviews
   and opinions coming out of the UK conveyancing sector.
-featuredpost: false
+featuredpost: true
 featuredimage: /img/under-construction.jpg
 type: news
 tags:
