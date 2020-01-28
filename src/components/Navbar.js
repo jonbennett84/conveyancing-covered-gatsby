@@ -23,9 +23,10 @@ const Navbar = class extends React.Component {
       >
         <div className="container">
           <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
+            <h1><Link to="/" className="navbar-item" title="Logo">
               Conveyancing Covered
             </Link>
+            </h1>
         </div>
        </div> 
        </nav>

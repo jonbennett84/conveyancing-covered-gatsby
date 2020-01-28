@@ -12,7 +12,7 @@ class BlogRoll extends React.Component {
       <div className="columns is-multiline">
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="is-parent column is-3" key={post.id}>
+            <div className="is-parent column is-4" key={post.id}>
               <article
                 className={`blog-list-item tile is-child box ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
@@ -20,7 +20,7 @@ class BlogRoll extends React.Component {
               >
                 <header>
                  
-                    <div className="featured-thumbnail">
+                    <div className="featured-thumbnail post-thumbnail">
                       <PreviewCompatibleImage
                         imageInfo={{
                           image: post.frontmatter.featuredimage,
@@ -33,11 +33,8 @@ class BlogRoll extends React.Component {
                 </header>
                 <div className="blog-list-item card-body">
                 <p className="post-meta">
-                <span className="subtitle is-size-6 is-block">
-                      {post.frontmatter.date}
-                    </span>
                     <Link
-                      className="title has-text-primary is-size-3"
+                      className="title has-text-primary is-size-4"
                       to={post.fields.slug}
                     >
                       {post.frontmatter.title}
@@ -47,11 +44,15 @@ class BlogRoll extends React.Component {
                   </p>
                 <p>
                   {post.excerpt}
-                  
-                  <Link className="button card-button" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
                 </p>
+                <span className="subtitle is-size-7">
+                      Benjamin Johnson
+                    </span><br/>
+                <span className="subtitle is-size-7 is-block">
+                  <time dateTime={post.frontmatter.date}>
+                  {post.frontmatter.date}
+                  </time>
+                    </span>
                 </div>
               </article>
             </div>
@@ -76,11 +77,11 @@ export default () => (
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
           filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
-          limit: 8
+          limit: 6
         ) {
           edges {
             node {
-              excerpt(pruneLength: 40)
+              excerpt(pruneLength: 80)
               id
               fields {
                 slug
@@ -92,7 +93,7 @@ export default () => (
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 360, quality: 100) {
+                    fluid(maxWidth: 326, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }

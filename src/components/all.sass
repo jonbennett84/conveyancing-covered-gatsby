@@ -1,4 +1,6 @@
 @import "~bulma/sass/utilities/initial-variables"
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 
 // Config vars
 //  logo brand color: #FD461E
@@ -9,6 +11,7 @@ $primary: $cvc-red
 $primary-invert: $cvc-red-invert
 $body-color: #333
 $black: #2b2523
+$family-sans-serif: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -126,28 +129,14 @@ $menu-label-color: $white-ter
 @import "~bulma"
 
 
-// responsiveness
-
-+mobile
-  .blog-list-item header
-    display: block
-  .blog-list-item .featured-thumbnail
-    text-align: center;
-   
-.box
-  box-shadow: none;
-  border-radius: 0;
-  border: 1px #eee solid;
-  background: $white;
-  padding: 0;
-
 
 .card-body
-  padding: 1.25em;
+  padding-bottom: 1.25em;
 
 .footer
   background-color: $primary
   padding: 2em;
+  margin-top: 2em;
 
 .subtitle, .subtitle:not(:last-child)
   margin-bottom: 0;
@@ -155,3 +144,77 @@ $menu-label-color: $white-ter
 .card-button
   width: 100%;
   margin-top: 1em;
+
+.content
+  width: 100%;
+
+.max-width-1032
+  max-width: 1032px!important;
+
+main
+  max-width: 1032px!important;
+  margin: 0 auto;
+
+.HomePageHero
+  width: 100%;
+  padding: 0;
+  color: $primary;
+  margin-bottom: 0.5em;
+
+.HomePageHero .subheader
+  font-size: 26px;
+  color: $primary;  
+  
+
+.HomePageHero h1
+  font-size: 52px;
+  line-height: 68px;
+  font-weight: 800;
+  text-transform: uppercase;
+
+
+.is-size-4
+  font-size: 24px!important;
+  font-weight: normal
+
+.featured-thumbnail .post-thumbnail, .featured-thumbnail .post-thumbnail img
+  max-height: 172px
+
+.content p:not(:last-child), .content ul:not(:last-child)
+  margin-bottom: 0.5em
+
+.post-thumbnail
+  border: 1px solid #656464;
+  background: #656464;
+  max-height: 172px!important;
+  overflow: hidden;
+
+.this-is-size-7
+  font-size: 0.9em
+
+.featured-image-full
+  width: 100%
+  max-height: 500px
+  overflow: hidden
+
+.section
+  padding: 0
+
+
+  
+// responsiveness
+
++mobile
+  .blog-list-item header
+    display: block
+  .blog-list-item .featured-thumbnail
+    text-align: center;
+  .content
+    padding: 0 2em
+   
+.box
+  box-shadow: none;
+  border-radius: 0;
+  border: 0;
+  background: $white;
+  padding: 0;

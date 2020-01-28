@@ -1,11 +1,32 @@
 module.exports = {
   siteMetadata: {
-    title: 'Conveyancing Covered - The latest news for property law professionals',
+    title: 'Conveyancing Covered',
     description:
       'Bringing you the latest news, opinion and events that every conveyancer and property professional should know about.',
+      siteUrl: `https://www.conveyancingcovered.com`,
+      image: 'https://lengstorf.com/images/jason-lengstorf.jpg',
+      author: {
+        name: 'Conveyancing Covered',
+        minibio: `
+          Bringing you the latest news from the UK property market.
+        `,
+      },
+      organization: {
+        name: 'Conveyancing Covered',
+        url: 'https://www.conveyancingcovered.com',
+        logo: 'https://lengstorf.com/android-chrome-512x512.png',
+      },
+      social: {
+        twitter: '@conveyancingcovered',
+        fbAppID: '',
+      },
+      canonicalUrl: 'https://www.conveyancingcovered.com',
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     'gatsby-plugin-react-helmet',
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-feed`,
     'gatsby-plugin-sass',
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
@@ -41,6 +62,13 @@ module.exports = {
               name: 'uploads',
             },
           },
+          {
+            resolve: "gatsby-remark-external-links",
+              options: {
+                target: "_blank",
+                rel: "noopener noreferrer"
+          },
+        },
           {
             resolve: 'gatsby-remark-images',
             options: {

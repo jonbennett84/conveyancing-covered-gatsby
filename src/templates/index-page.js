@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import HomePageHero from '../components/HomePageHero'
 import BlogRoll from '../components/BlogRoll'
-import FeaturedBlogRoll from '../components/FeaturedBlogRoll'
 
 export const IndexPageTemplate = ({
   image,
@@ -14,32 +14,26 @@ export const IndexPageTemplate = ({
   description,
   intro,
 }) => (
-<div>
-<section className="section section--gradient">
+  <div>
+
+  
+<main>
+<HomePageHero/>
+
       <div className="container">
-        <div className="section">
           <div className="columns">
-            <div>
-              <div className="content">          
+            <div className="content">          
                 <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Featured Conveyancing News
-                  </h3>
-                  <FeaturedBlogRoll />
                   
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest Conveyancing News
-                  </h3>
+               
                   <BlogRoll />
 
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-  </div>
+  </main>
+</div>
 )
 
 IndexPageTemplate.propTypes = {

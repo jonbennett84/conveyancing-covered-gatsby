@@ -5,12 +5,15 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import SEO from '../components/SEO'
 
 export const BlogPostTemplate = ({
   content,
   contentComponent,
   description,
   tags,
+  date,
   title,
   helmet,
   featuredimage,
@@ -18,14 +21,35 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
+    
+  
     <section className="section">
       {helmet || ''}
+     
+      <div className="featured-image-full">
+                   <PreviewCompatibleImage
+                     imageInfo={{
+                       image: featuredimage ,
+                       alt: `alt tag {featuredimage} `,
+                     }}
+                   />
+                 </div>
       <div className="container content">
+   
+               
         <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+          <div itemScope itemType="http://schema.org/NewsArticle" className="column is-10 is-offset-1">
+          <header>
+                 
+         
+           
+             </header>
+            <h1 itemProp="headline" className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
+            <p itemProp="datePublished">Date published: <time dateTime={date}>
+                  {date}
+                  </time> </p>
             <p>{description}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
@@ -53,7 +77,7 @@ BlogPostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
-  featuredimage: PropTypes.object,
+  date: PropTypes.string,
 }
 
 const BlogPost = ({ data }) => {
@@ -65,6 +89,9 @@ const BlogPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
+        date={post.frontmatter.date}
+        featuredimage={post.frontmatter.featuredimage}
+        url="www"
         helmet={
           <Helmet titleTemplate="%s | Conveyancing Covered">
             <title>{`${post.frontmatter.title}`}</title>
@@ -74,7 +101,9 @@ const BlogPost = ({ data }) => {
               content={`${post.frontmatter.description}`}
             />
             <meta property="og:title" content={`${post.frontmatter.title}`}/>
-            <meta property="og:image" content={`${post.frontmatter.featuredimage}`}/>
+                    
+
+           
           </Helmet>
         }
         tags={post.frontmatter.tags}
@@ -104,9 +133,9 @@ export const pageQuery = graphql`
         tags
         featuredimage {
           childImageSharp {
-            fluid(maxWidth: 360, quality: 100) {
+            fluid(maxWidth: 1600, quality: 100) {
               ...GatsbyImageSharpFluid
-            }
+              }
           }
         }
       }

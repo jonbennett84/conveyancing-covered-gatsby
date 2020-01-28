@@ -12,7 +12,9 @@ const Footer = class extends React.Component {
     return (
       <footer className="footer has-text-white-ter">
         <div className="content has-text-centered">
-          CONVEYANCING COVERED
+          CONVEYANCING COVERED<br/>
+          Conveyancing news, events, interviews and advice.
+
         </div>
       </footer>
     )

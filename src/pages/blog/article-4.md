@@ -8,3 +8,6 @@ featuredimage: /img/blog-index.jpg
 type: events
 ---
 Article goes here add lots of information so that the snippet sizes works.
+
+[I'm an inline-style link](https://www.google.com)
+[interna link](./article5/)
